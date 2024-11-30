@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>HomePage</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="Комплексное продвижение артистов и музыки">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20241130151657">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo header__logo-white">
+					<img src="img/logo.webp" alt="Image">
+				</a>
+				<a href="#" class="header__logo header__logo-dark">
+					<img src="img/logo-dark.webp" alt="Image">
+				</a>
+				<div class="knop">
+					<button aria-label="кнопка переключения темной темы" id="theme-toggle" class="toggle-button">
+						<span class="toggle-circle"></span>
+					</button>
+				</div>
+				<div class="header__menu menu">
+					<button aria-label="кнопка меню" type="button" class="menu__icon icon-menu"><span></span></button>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Артисты</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">Руководство</a></li>
+							<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+						</ul>
+						<div class="header__social">
+							<a aria-label="ссылка социального страницы" href="#" class="header__social_item">
+								<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1_787)">
+										<mask id="mask0_1_787" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="15">
+											<path d="M15.0752 0H0.0751953V15H15.0752V0Z" fill="white" />
+										</mask>
+										<g mask="url(#mask0_1_787)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M1.12961 1.05442C0.0751953 2.10883 0.0751953 3.80589 0.0751953 7.2V7.8C0.0751953 11.1941 0.0751953 12.8912 1.12961 13.9456C2.18403 15 3.88109 15 7.2752 15H7.8752C11.2693 15 12.9664 15 14.0208 13.9456C15.0752 12.8912 15.0752 11.1941 15.0752 7.8V7.2C15.0752 3.80589 15.0752 2.10883 14.0208 1.05442C12.9664 0 11.2693 0 7.8752 0H7.2752C3.88109 0 2.18403 0 1.12961 1.05442ZM2.60648 4.56254C2.68772 8.46254 4.6377 10.8063 8.05646 10.8063H8.25024V8.57502C9.50649 8.70002 10.4564 9.61878 10.8377 10.8063H12.6127C12.1252 9.03128 10.8439 8.05002 10.0439 7.67502C10.8439 7.21253 11.9689 6.08753 12.2377 4.56254H10.6251C10.2751 5.80004 9.23774 6.92502 8.25024 7.03127V4.56254H6.63768V8.88752C5.63769 8.63753 4.37522 7.42503 4.31897 4.56254H2.60648Z" />
+										</g>
+									</g>
+									<defs>
+										<clipPath id="clip0_1_787">
+											<rect width="15.15" height="15" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<a aria-label="ссылка социального страницы" href="#" class="header__social_item">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1_796)">
+										<mask id="path-1-inside-1_1_796" fill="white">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4809 3.69182C17.3875 3.31009 18.3594 4.0767 18.1993 5.04728L16.3086 16.5112C16.1262 17.6165 14.9122 18.2508 13.8982 17.7C13.0496 17.239 11.7906 16.5296 10.6559 15.7882C10.0893 15.418 8.35442 14.2308 8.56767 13.3857C8.75 12.6631 11.6666 9.9482 13.3333 8.33362C13.9879 7.69939 13.6898 7.333 12.9166 7.91695C10.9986 9.36554 7.91927 11.568 6.90097 12.1878C6.00252 12.7346 5.53342 12.828 4.97388 12.7346C3.95211 12.5644 3.0048 12.3007 2.2314 11.9801C1.18609 11.5468 1.23701 10.1103 2.23069 9.69195L16.4809 3.69182Z" />
+										</mask>
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4809 3.69182C17.3875 3.31009 18.3594 4.0767 18.1993 5.04728L16.3086 16.5112C16.1262 17.6165 14.9122 18.2508 13.8982 17.7C13.0496 17.239 11.7906 16.5296 10.6559 15.7882C10.0893 15.418 8.35442 14.2308 8.56767 13.3857C8.75 12.6631 11.6666 9.9482 13.3333 8.33362C13.9879 7.69939 13.6898 7.333 12.9166 7.91695C10.9986 9.36554 7.91927 11.568 6.90097 12.1878C6.00252 12.7346 5.53342 12.828 4.97388 12.7346C3.95211 12.5644 3.0048 12.3007 2.2314 11.9801C1.18609 11.5468 1.23701 10.1103 2.23069 9.69195L16.4809 3.69182Z" />
+										<path d="M16.4809 3.69182L29.4162 34.413L29.4163 34.4129L16.4809 3.69182ZM18.1993 5.04728L-14.6896 -0.377319L-14.6897 -0.377123L18.1993 5.04728ZM16.3086 16.5112L49.1974 21.9365L49.1976 21.9356L16.3086 16.5112ZM13.8982 17.7L29.8086 -11.5912L29.8081 -11.5914L13.8982 17.7ZM10.6559 15.7882L-7.57854 43.6919L-7.57744 43.6926L10.6559 15.7882ZM8.56767 13.3857L40.8879 21.5414L40.8879 21.5412L8.56767 13.3857ZM13.3333 8.33362L36.5264 32.275L36.5267 32.2747L13.3333 8.33362ZM12.9166 7.91695L33.006 34.5163L33.0062 34.5162L12.9166 7.91695ZM6.90097 12.1878L24.2315 40.6617L24.2325 40.6611L6.90097 12.1878ZM4.97388 12.7346L10.4582 -20.1444L10.4524 -20.1454L4.97388 12.7346ZM2.2314 11.9801L-10.5336 42.7724L-10.5325 42.7729L2.2314 11.9801ZM2.23069 9.69195L15.1644 40.4138L15.166 40.4131L2.23069 9.69195ZM29.4163 34.4129C6.14732 44.2105 -18.7986 24.5352 -14.6896 -0.377319L51.0883 10.4719C55.5175 -16.3818 28.6277 -37.5904 3.54552 -27.0293L29.4163 34.4129ZM-14.6897 -0.377123L-16.5804 11.0868L49.1976 21.9356L51.0883 10.4717L-14.6897 -0.377123ZM-16.5803 11.0859C-13.1712 -9.58041 9.92791 -22.39 29.8086 -11.5912L-2.01228 46.9911C19.8966 58.8916 45.4237 44.8135 49.1974 21.9365L-16.5803 11.0859ZM29.8081 -11.5914C29.6001 -11.7044 29.3707 -11.8323 29.1582 -11.9561C28.9273 -12.0906 28.8429 -12.1465 28.8893 -12.1162L-7.57744 43.6926C-5.33708 45.1565 -3.17208 46.3611 -2.01175 46.9913L29.8081 -11.5914ZM28.8904 -12.1155C28.9216 -12.0951 30.3842 -11.1802 32.1358 -9.53561C32.9284 -8.79145 35.1941 -6.60742 37.3096 -3.08075C39.1019 -0.0927081 43.9953 9.227 40.8879 21.5414L-23.7525 5.22996C-26.9666 17.9669 -21.9363 27.752 -19.8609 31.2118C-17.4625 35.2104 -14.7676 37.8728 -13.4971 39.0656C-10.7897 41.6077 -8.17631 43.3013 -7.57854 43.6919L28.8904 -12.1155ZM40.8879 21.5412C39.999 25.064 38.7231 27.634 38.0854 28.8372C37.3537 30.218 36.6697 31.2623 36.2501 31.8743C35.4282 33.0734 34.7391 33.8883 34.5215 34.1435C34.0456 34.7018 33.8007 34.9303 34.0931 34.6346C34.7246 33.9962 35.2287 33.5322 36.5264 32.275L-9.85992 -15.6077C-10.2288 -15.2503 -12.0164 -13.5496 -13.3055 -12.2463C-13.9733 -11.5711 -15.0857 -10.4275 -16.2119 -9.1065C-16.7545 -8.46993 -17.7144 -7.31172 -18.7373 -5.81958C-19.2573 -5.06096 -20.0243 -3.88265 -20.8196 -2.38199C-21.5209 -1.05883 -22.8409 1.61712 -23.7526 5.23016L40.8879 21.5412ZM36.5267 32.2747C38.3731 30.486 41.5937 27.0007 43.9963 21.7173C45.1414 19.1992 52.8166 1.12067 38.2786 -14.8049C24.2668 -30.1541 6.16356 -24.9822 3.83931 -24.2863C-1.46615 -22.6979 -5.21565 -20.1606 -7.17303 -18.6823L33.0062 34.5162C31.4354 35.7025 28.0131 38.0666 22.9606 39.5793C20.8892 40.1995 2.96457 45.3931 -10.9579 30.1418C-25.4066 14.3141 -17.7312 -3.59035 -16.6902 -5.87962C-14.3917 -10.9342 -11.3792 -14.1358 -9.86024 -15.6074L36.5267 32.2747ZM-7.1728 -18.6824C-7.83274 -18.184 -8.82228 -17.4595 -9.75745 -16.7939C-10.2165 -16.4672 -10.5846 -16.2102 -10.833 -16.0401C-10.9566 -15.9554 -11.0045 -15.9239 -10.989 -15.9341C-10.9789 -15.9408 -10.9314 -15.9721 -10.8531 -16.0222C-10.7804 -16.0687 -10.6333 -16.1621 -10.4306 -16.2855L24.2325 40.6611C26.8477 39.0692 31.1401 35.9256 33.006 34.5163L-7.1728 -18.6824ZM-10.4296 -16.2861C-9.69626 -16.7325 -6.91831 -18.4006 -2.7933 -19.5026C2.23498 -20.846 6.85945 -20.7447 10.4582 -20.1444L-0.51045 45.6137C3.64786 46.3073 8.78665 46.4085 14.414 44.9051C19.138 43.643 22.5998 41.6549 24.2315 40.6617L-10.4296 -16.2861ZM10.4524 -20.1454C11.4802 -19.9742 13.0404 -19.623 14.9953 -18.8126L-10.5325 42.7729C-7.03075 44.2244 -3.57599 45.1029 -0.504648 45.6147L10.4524 -20.1454ZM14.9964 -18.8122C43.016 -7.19665 39.7217 30.0753 15.1644 40.4138L-10.703 -21.0299C-37.2477 -9.85475 -40.6438 30.2902 -10.5336 42.7724L14.9964 -18.8122ZM15.166 40.4131L29.4162 34.413L3.54561 -27.0293L-10.7046 -21.0292L15.166 40.4131Z" mask="url(#path-1-inside-1_1_796)" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1_796">
+											<rect width="20" height="20" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<a aria-label="ссылка социального страницы" href="#" class="header__social_item">
+								<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1_804)">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M7.98844 12.5861V6.9743C9.98064 7.91173 11.5236 8.81731 13.3485 9.79364C11.8433 10.6283 9.98064 11.5649 7.98844 12.5861ZM19.091 4.18328C18.7474 3.73052 18.1617 3.37809 17.5381 3.26141C15.7053 2.91336 4.27099 2.91237 2.43915 3.26141C1.93911 3.35515 1.49384 3.58173 1.11133 3.93377C-0.500363 5.42967 0.00466618 13.4517 0.393147 14.7512C0.556507 15.3136 0.76769 15.7193 1.03365 15.9855C1.37631 16.3376 1.84547 16.58 2.38436 16.6887C3.89345 17.0008 11.668 17.1753 17.5062 16.7355C18.0441 16.6418 18.5202 16.3916 18.8958 16.0246C20.3859 14.5347 20.2843 6.06213 19.091 4.18328Z" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1_804">
+											<rect width="20" height="20" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="first">
+				<div class="first__image">
+					<img src="img/firstbg.webp" alt="Image">
+				</div>
+				<div class="first__content">
+					<div data-watch data-watch-once class="first__top myanim">
+						<h1 class="first__title">Комплексное продвижение артистов и музыки </h1>
+						<div class="first__text">Хочешь, чтобы тебя услышали? Мы знаем как это сделать! Эффективно и
+							качественно продвигаем музыку и музыкантов!</div>
+					</div>
+					<div class="first__bottom">
+						<div class="first__b-text">Ответь на 3 простых вопроса и <span>получи бесплатный чек-лист</span>
+							по
+							подготовке релиза!</div>
+						<a href="#" class="first__button">
+							<svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 0.648926L32.7692 32.4057M32.7692 32.4057V6.63209M32.7692 32.4057H5.14381" stroke="#FBFBFD" />
+							</svg>
+							ПОЛУЧИТЬ ЧЕК-ЛИСТ
+						</a>
+					</div>
+				</div>
+			</section>
+			<div class="marketing">
+				<div class="marketing__container">
+					<div data-watch data-watch-once class="marketing__left myanimimg">
+						<div class="marketing__image">
+							<img src="img/image.webp" alt="Image">
+						</div>
+						<div class="marketing__name">Дима Карташов</div>
+						<div class="marketing__job">Артист, продюсер</div>
+					</div>
+					<div data-watch data-watch-once class="marketing__right myanim">
+						<div data-showmore="items" data-showmore-media="767.98,max" class="block">
+							<div data-showmore-content="1" class="block__content">
+								<p><span>CTA Media – это музыкальное агентство полного цикла с большой историей и
+										большим портфолио.</span> Основная наша компетенция – это музыкальный маркетинг.
+									Мы продвигаем артистов, <span>делаем это много лет.</span> Помимо маркетинга мы
+									также оказываем дополнительные услуги: пишем песни, помогаем с юридическими правами,
+									с дистрибьюцией, с созданием контента и ведением социальных сетей.</p>
+								<p><span>Мы работаем с артистами на 360 градусов,</span> поэтому прекрасно знаем боли и
+									проблемы рынка и помогаем эффективно их решать. Я рад вас приветствовать на нашем
+									сайте. Изучите наши возможности, наш подход к работе и обязательно напишите нам. Мы
+									поможем вам с вашими задачами.</p>
+							</div>
+							<button hidden data-showmore-button type="button" class="block__more"><span>Читать
+									подробнее</span><span>Закрыть</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section class="facts">
+				<h2 data-watch data-watch-once class="facts__title title myanimtitle">факты</h2>
+				<div class="facts__container">
+					<div class="facts__left">
+						<div data-watch data-watch-once class="facts__item myanimimg">
+							<div class="facts__n">01</div>
+							<div class="facts__body">
+								<div class="facts__name">Опыт</div>
+								<div class="facts__text">Более <span>13 лет</span> продвижения музыки, с 2011 года.
+								</div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="facts__item myanimimg">
+							<div class="facts__n">02</div>
+							<div class="facts__body">
+								<div class="facts__name">Профессионализм</div>
+								<div class="facts__text">Продвигаем более <span>70 музыкальных релизов
+										ежемесячно.</span></div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="facts__item myanimimg">
+							<div class="facts__n">03</div>
+							<div class="facts__body">
+								<div class="facts__name">Преимущество</div>
+								<div class="facts__text">Работаем как с популярными артистами <span>(в нашем портфолио
+										десятки крупнейших имён и брендов),</span> так и с начинающими артистами,
+									поэтому знаем, какие показатели должны быть на каждом этапе в той или иной соц.
+									сети.</div>
+							</div>
+						</div>
+					</div>
+					<div data-watch data-watch-once class="facts__right myanimimg">
+						<img src="img/blok.webp" alt="Image">
+						<div class="facts__nm">Как начать работу с нами?</div>
+						<div class="facts__tx">Все просто, <span>оставляй заявку на бесплатную консультацию</span>, мы
+							свяжемся с
+							тобой и расскажем подробно, как продвинуть твой релиз или продвигаться как Артист!</div>
+						<a href="" class="facts__button">ЗАПИСАТЬСЯ</a>
+					</div>
+				</div>
+			</section>
+			<div class="possibilities">
+				<div class="possibilities__container">
+					<div data-watch data-watch-once class="possibilities__items myanimimg">
+						<div class="possibilities__bdy">
+							<div class="possibilities__title possibilities__title-w">Наши возможности</div>
+							<div class="possibilities__item possibilities__item-w">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic1.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">Топ-чарты</div>
+								</div>
+								<div class="possibilities__text">Имеем опыт продвижения треков в топ-чарты <span>как
+										популярных артистов,</span> так и артистов <span>без аудитории.</span></div>
+							</div>
+							<div class="possibilities__item possibilities__item-w">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic2.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">Разгон слушателей</div>
+								</div>
+								<div class="possibilities__text">Разгоняем карточки новых артистов в Яндекс.Музыке
+									<span>с 0
+										до 300 тысяч слушателей</span> за несколько месяцев.
+								</div>
+							</div>
+							<div class="possibilities__item possibilities__item-w">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic3.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">Все площадки</div>
+								</div>
+								<div class="possibilities__text">Продвигаем музыку в <span>VK, Яндекс.Музыка, TikTok,
+										Spotify, YouTube</span> и другой популярной социальной сети.</div>
+							</div>
+						</div>
+					</div>
+					<div data-watch data-watch-once class="possibilities__items myanimimg">
+						<!--<img src="img/itbg2.webp" alt="Image">-->
+						<div class="possibilities__bdy">
+							<img src="img/itbg2.webp" alt="Image">
+							<div class="possibilities__title">работаем надёжно</div>
+							<div class="possibilities__item">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic4.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">Скорость</div>
+								</div>
+								<div class="possibilities__text">Запускаем рекламу <span>в день обращения</span> или на
+									следующие сутки.</div>
+							</div>
+							<div class="possibilities__item">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic5.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">Отчёты</div>
+								</div>
+								<div class="possibilities__text">Самые прозрачные и понятные <span>отчёты с ссылками и
+										скриншотами.</span></div>
+							</div>
+							<div class="possibilities__item">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic6.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">Аналитика</div>
+								</div>
+								<div class="possibilities__text">Мы постоянно проверяем конверсии, тестируем гипотезы,
+									используем софт для аналитики и <span>всегда ориентируемся на цифры.</span></div>
+							</div>
+						</div>
+					</div>
+					<div data-watch data-watch-once class="possibilities__items myanimimg">
+						<!--<img src="img/itbg1.webp" alt="Image">-->
+						<div class="possibilities__bdy">
+							<img src="img/itbg1.webp" alt="Image">
+							<div class="possibilities__title">Больше, чем сотрудник на удалёнке</div>
+							<div class="possibilities__item">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic7.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">Команда</div>
+								</div>
+								<div class="possibilities__text">Более <span>15 специалистов</span> в команде, и каждый
+									отвечает за свое направление.</div>
+							</div>
+							<div class="possibilities__item">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic8.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">IT-продукты</div>
+								</div>
+								<div class="possibilities__text"><span>Разрабатываем</span> и применяем собственные
+									<span>IT-решения</span> для оптимизации продвижения.
+								</div>
+							</div>
+							<div class="possibilities__item">
+								<div class="possibilities__top">
+									<div class="possibilities__icon">
+										<img src="img/ic9.webp" alt="Image">
+									</div>
+									<div class="possibilities__name">Полный цикл</div>
+								</div>
+								<div class="possibilities__text">Мы работаем в музыкальном шоу-бизнесе <span>много
+										лет,</span> поэтому знаем и понимаем все проблемы артистов и рынка, и помогаем
+									решать их все. Мы создаём музыку, помогаем с правами, разрабатываем стратегию, ведём
+									социальные сети, создаём контент и продвигаем его. <span>Мы знаем рынок на 360
+										градусов,</span> поэтому работа с нами приносит результат.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="possibilities__bottom">
+					<div class="possibilities__b-txt">Если ты ищешь надежную команду для качественного продвижения своей
+						музыки — оставляй заявку!</div>
+					<a href="" class="possibilities__button">ОСТАВИТЬ ЗАЯВКУ</a>
+				</div>
+			</div>
+			<section class="work">
+				<div class="work__container">
+					<h2 data-watch data-watch-once class="work__title title myanimtitle">Как мы работаем?</h2>
+					<div class="work__subtitle">6 последовательных шагов к успеху музыкального проекта.</div>
+					<div class="work__items">
+						<div data-watch data-watch-once class="work__item myanimimg">
+							<img src="img/01.webp" alt="Image">
+							<div class="work__icon">
+								<img src="img/ico1.webp" alt="Image">
+							</div>
+							<div class="work__name">Заполнение брифа</div>
+							<div class="work__text">Начинаем сотрудничество с получения подробной информации о проекте.
+							</div>
+						</div>
+						<div data-watch data-watch-once class="work__item myanimimg">
+							<img src="img/02.webp" alt="Image">
+							<div class="work__icon">
+								<img src="img/ico6.webp" alt="Image">
+							</div>
+							<div class="work__name">Коммуникация и стратегия</div>
+							<div class="work__text">Более детально обсуждаем проект и составляем общую стратегию.</div>
+						</div>
+						<div data-watch data-watch-once class="work__item myanimimg">
+							<img src="img/03.webp" alt="Image">
+							<div class="work__icon">
+								<img src="img/ico2.webp" alt="Image">
+							</div>
+							<div class="work__name">Составление промо-плана</div>
+							<div class="work__text">Создаём эффективный план дальнейшей работы с проектом.</div>
+						</div>
+						<div data-watch data-watch-once class="work__item myanimimg">
+							<img src="img/04.webp" alt="Image">
+							<div class="work__icon">
+								<img src="img/ico3.webp" alt="Image">
+							</div>
+							<div class="work__name">Оплата услуг</div>
+							<div class="work__text">Согласовываем стоимость и порядок оплаты.</div>
+						</div>
+						<div data-watch data-watch-once class="work__item myanimimg">
+							<img src="img/05.webp" alt="Image">
+							<div class="work__icon">
+								<img src="img/ico4.webp" alt="Image">
+							</div>
+							<div class="work__name">Запуск продвижения</div>
+							<div class="work__text">Запускаем рекламную кампанию и контролируем ее на всех этапах.</div>
+						</div>
+						<div data-watch data-watch-once class="work__item myanimimg">
+							<img src="img/06.webp" alt="Image">
+							<div class="work__icon">
+								<img src="img/ico5.webp" alt="Image">
+							</div>
+							<div class="work__name">Отчёт</div>
+							<div class="work__text">По завершению рекламной кампании предоставляем полные и прозрачные
+								отчеты и делаем оценку результатов.</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="baner">
+				<div class="baner__body">
+					<div class="baner__image">
+						<img src="img/banner.webp" alt="Image" class="baner__img">
+					</div>
+					<img data-watch data-watch-once src="img/bannerarrow.webp" alt="Image" class="baner__img-arr myanimimg">
+					<img data-watch data-watch-once src="img/banermob.webp" alt="Image" class="baner__img-m myanimimg">
+					<div class="baner__container">
+						<div data-watch data-watch-once class="baner__content myanimtitle">
+							<h2 class="baner__title">бесплатный план ПРОДВИЖЕНИЯ</h2>
+							<div class="baner__text">Наша команда специалистов бесплатно составит план продвижения
+								твоего релиза. Оставляй заявку!</div>
+							<a href="#" class="baner__button">ПОЛУЧИТЬ ПЛАН ПРОДВИЖЕНИЯ</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<div class="services__container">
+					<h2 data-watch data-watch-once class="services__title title myanimtitle">наши услуги</h2>
+					<div class="services__text">Полный комплекс услуг для Артистов и музыкантов любого уровня.</div>
+					<div class="services__items">
+						<div data-watch data-watch-once class="services__item myanim">
+							<div class="services__top">
+								<div class="services__icon">
+									<img src="img/icon1.webp" alt="Image">
+								</div>
+								<div class="services__name">музыкальный маркетинг</div>
+							</div>
+							<div class="services__bottom">
+								<a href="#" class="services__more">Узнать подробнее</a>
+								<div class="services__btn">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.375977 0.375977L13.9526 13.9526M13.9526 13.9526V2.93389M13.9526 13.9526H2.14684" stroke="#181818" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="services__item myanim">
+							<div class="services__top">
+								<div class="services__icon">
+									<img src="img/icon2.webp" alt="Image">
+								</div>
+								<div class="services__name">smm</div>
+							</div>
+							<div class="services__bottom">
+								<a href="#" class="services__more">Узнать подробнее</a>
+								<div class="services__btn">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.375977 0.375977L13.9526 13.9526M13.9526 13.9526V2.93389M13.9526 13.9526H2.14684" stroke="#181818" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="services__item myanim">
+							<div class="services__top">
+								<div class="services__icon">
+									<img src="img/icon3.webp" alt="Image">
+								</div>
+								<div class="services__name">аудио—
+									продакшн</div>
+							</div>
+							<div class="services__bottom">
+								<a href="#" class="services__more">Узнать подробнее</a>
+								<div class="services__btn">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.375977 0.375977L13.9526 13.9526M13.9526 13.9526V2.93389M13.9526 13.9526H2.14684" stroke="#181818" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="services__item myanim">
+							<div class="services__top">
+								<div class="services__icon">
+									<img src="img/icon4.webp" alt="Image">
+								</div>
+								<div class="services__name">видео— продакшн</div>
+							</div>
+							<div class="services__bottom">
+								<a href="#" class="services__more">Узнать подробнее</a>
+								<div class="services__btn">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.375977 0.375977L13.9526 13.9526M13.9526 13.9526V2.93389M13.9526 13.9526H2.14684" stroke="#181818" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="services__item myanim">
+							<div class="services__top">
+								<div class="services__icon">
+									<img src="img/icon5.webp" alt="Image">
+								</div>
+								<div class="services__name">Дизайн</div>
+							</div>
+							<div class="services__bottom">
+								<a href="#" class="services__more">Узнать подробнее</a>
+								<div class="services__btn">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.375977 0.375977L13.9526 13.9526M13.9526 13.9526V2.93389M13.9526 13.9526H2.14684" stroke="#181818" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="services__item myanim">
+							<div class="services__top">
+								<div class="services__icon">
+									<img src="img/icon6.webp" alt="Image">
+								</div>
+								<div class="services__name">юридические
+									услуги</div>
+							</div>
+							<div class="services__bottom">
+								<a href="#" class="services__more">Узнать подробнее</a>
+								<div class="services__btn">
+									<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.375977 0.375977L13.9526 13.9526M13.9526 13.9526V2.93389M13.9526 13.9526H2.14684" stroke="#181818" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class="services__button">ОСТАВИТЬ ЗАЯВКУ</a>
+				</div>
+			</section>
+			<section class="what">
+				<div class="what__container">
+					<h2 data-watch data-watch-once class="what__title title myanimtitle">Что вы получите?</h2>
+					<div class="what__text">Преимущества сотрудничества с нами.</div>
+					<div class="what__slider swiper">
+						<div class="what__wrapper swiper-wrapper">
+							<div class="what__slide swiper-slide">
+								<div class="what__n">#1</div>
+								<div class="what__name">Индивидуальный подход</div>
+								<div class="what__txt">Мы разрабатываем персонализированные стратегии продвижения,
+									учитывая уникальные особенности каждого артиста и его творческий путь.</div>
+								<div class="what__image">
+									<img src="img/slid1.webp" alt="Image">
+								</div>
+							</div>
+							<div class="what__slide swiper-slide">
+								<div class="what__n">#2</div>
+								<div class="what__name">Партнёрские связи</div>
+								<div class="what__txt">Благодаря нашему обширному сетевому взаимодействию с музыкальными
+									лейблами, продюсерами и медиаплатформами, мы открываем новые возможности для вашего
+									творчества.</div>
+								<div class="what__image">
+									<img src="img/slid2.webp" alt="Image">
+								</div>
+							</div>
+							<div class="what__slide swiper-slide">
+								<div class="what__n">#3</div>
+								<div class="what__name">Максимальная видимость</div>
+								<div class="what__txt">Наши методы обеспечивают вашу присутствие во всех ключевых
+									музыкальных платформах и социальных сетях, что значительно увеличивает охват
+									аудитории.</div>
+								<div class="what__image">
+									<img src="img/slid3.webp" alt="Image">
+								</div>
+							</div>
+							<div class="what__slide swiper-slide">
+								<div class="what__n">#4</div>
+								<div class="what__name">Профессиональная аналитика</div>
+								<div class="what__txt">Мы предоставляем подробный анализ результатов продвижения и
+									своевременную отчетность, что позволяет вам видеть реальный прогресс и
+									корректировать кампанию в реальном времени.</div>
+								<div class="what__image">
+									<img src="img/slid4.webp" alt="Image">
+								</div>
+							</div>
+						</div>
+						<div class="what__buttons">
+							<button type="button" class="swiper-button-prev what__btn what__prev"></button>
+							<button type="button" class="swiper-button-next what__btn what__next"></button>
+						</div>
+					</div>
+					<div class="what__bottom">
+						<div data-watch data-watch-once class="facts__right myanimimg">
+							<img src="img/blok.webp" alt="Image">
+							<div class="facts__nm">Как начать работу с нами?</div>
+							<div class="facts__tx">Все просто, <span>оставляй заявку на бесплатную консультацию</span>,
+								мы
+								свяжемся с
+								тобой и расскажем подробно, как продвинуть твой релиз или продвигаться как Артист!</div>
+							<a href="" class="facts__button">ЗАПИСАТЬСЯ</a>
+						</div>
+						<div class="what__right">
+							<img src="img/what.webp" alt="Image" class="what_d">
+							<img src="img/whatmob.webp" alt="Image" class="what_m">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="who">
+				<h2 data-watch data-watch-once class="who__title title myanimtitle">С кем мы работали?</h2>
+				<div class="who__text">Работаем как с большими звёздами, так и с начинающими Артистами.</div>
+				<div class="who__slider swiper">
+					<div class="who__wrapper swiper-wrapper">
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im0.webp" alt="Image">
+							</div>
+							<div class="who__name">Staffорд63</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im1.webp" alt="Image">
+							</div>
+							<div class="who__name">ФОГЕЛЬ</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im2.webp" alt="Image">
+							</div>
+							<div class="who__name">Оксана Почева (Акула)</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im3.webp" alt="Image">
+							</div>
+							<div class="who__name">DJ DimixeR</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im4.webp" alt="Image">
+							</div>
+							<div class="who__name">Элвин Грей</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im0.webp" alt="Image">
+							</div>
+							<div class="who__name">Staffорд63</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im1.webp" alt="Image">
+							</div>
+							<div class="who__name">ФОГЕЛЬ</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im2.webp" alt="Image">
+							</div>
+							<div class="who__name">Оксана Почева (Акула)</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im3.webp" alt="Image">
+							</div>
+							<div class="who__name">DJ DimixeR</div>
+						</div>
+						<div class="who__slide swiper-slide">
+							<div class="who__image">
+								<img src="img/im4.webp" alt="Image">
+							</div>
+							<div class="who__name">Элвин Грей</div>
+						</div>
+					</div>
+					<div class="who__buttons">
+						<button aria-label="кнопка назад" type="button" class="swiper-button-prev who__btn who__prev"></button>
+						<button aria-label="кнопка вперед" type="button" class="swiper-button-next who__btn who__next"></button>
+					</div>
+				</div>
+			</section>
+			<section class="friends">
+				<img src="img/fbg.webp" alt="Image">
+				<div class="friends__container">
+					<h2 data-watch data-watch-once class="friends__title title myanimtitle">Наши друзья</h2>
+					<div class="friends__text">У нас большое количество партнёров на музыкальном рынке.</div>
+					<div class="friends__items">
+						<a data-watch data-watch-once href="#" class="friends__item myanimimg">
+							<div class="friends__image">
+								<img src="img/f1.webp" alt="Image">
+							</div>
+							<div class="friends__name">S&P Digital</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="friends__item myanimimg">
+							<div class="friends__image">
+								<img src="img/f2.webp" alt="Image">
+							</div>
+							<div class="friends__name">LOTUS MUSIC</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="friends__item myanimimg">
+							<div class="friends__image">
+								<img src="img/f3.webp" alt="Image">
+							</div>
+							<div class="friends__name">VK Records</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="friends__item myanimimg">
+							<div class="friends__image">
+								<img src="img/f4.webp" alt="Image">
+							</div>
+							<div class="friends__name">Monolit Music</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="friends__item myanimimg">
+							<div class="friends__image">
+								<img src="img/f5.webp" alt="Image">
+							</div>
+							<div class="friends__name">Первое музыкальное</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="friends__item myanimimg">
+							<div class="friends__image">
+								<img src="img/f6.webp" alt="Image">
+							</div>
+							<div class="friends__name">ZVONKO digital</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="friends__item myanimimg">
+							<div class="friends__image">
+								<img src="img/f7.webp" alt="Image">
+							</div>
+							<div class="friends__name">MusicAlligator</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="friends__item friends__item_b myanimimg">
+							<div class="friends__body">
+								<div class="friends__content">
+									<div class="friends__icon">
+										<img src="img/fsmile.webp" alt="Image">
+									</div>
+									<div class="friends__txt">И многие другие лейблы...</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="management">
+				<div class="management__container">
+					<h2 data-watch data-watch-once class="management__title title myanimtitle">руководство</h2>
+					<div class="management__text">Ключевые люди у руля нашей компании.</div>
+					<div class="management__items">
+						<div data-watch data-watch-once class="management__item myanimtitle">
+							<div class="management__image">
+								<img src="img/r1.webp" alt="Image">
+							</div>
+							<div class="management__name">Дима Карташов</div>
+							<div class="management__job">Основной продюсер и маркетолог, автор и исполнитель.</div>
+							<div class="management__bottom">
+								<a href="#" class="management__more">Узнать подробнее</a>
+								<div class="management__btn">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.2" d="M1.05078 1.05078L17.3427 17.3427M17.3427 17.3427V4.12027M17.3427 17.3427H3.17581" stroke="white" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="management__item myanimtitle">
+							<div class="management__image">
+								<img src="img/r2.webp" alt="Image">
+							</div>
+							<div class="management__name">Игорь Демочкин</div>
+							<div class="management__job">Заполнитель.</div>
+							<div class="management__bottom">
+								<a href="#" class="management__more">Узнать подробнее</a>
+								<div class="management__btn">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.2" d="M1.05078 1.05078L17.3427 17.3427M17.3427 17.3427V4.12027M17.3427 17.3427H3.17581" stroke="white" />
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div data-watch data-watch-once class="management__item myanimtitle">
+							<div class="management__image">
+								<img src="img/r3.webp" alt="Image">
+							</div>
+							<div class="management__name">Юлия Крупцова</div>
+							<div class="management__job">Стратег. Эксперт по развитию Артистов в соц. сетях.</div>
+							<div class="management__bottom">
+								<a href="#" class="management__more">Узнать подробнее</a>
+								<div class="management__btn">
+									<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path opacity="0.2" d="M1.05078 1.05078L17.3427 17.3427M17.3427 17.3427V4.12027M17.3427 17.3427H3.17581" stroke="white" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="about">
+				<div class="about__container">
+					<div data-watch data-watch-once class="about__image myanimimg">
+						<picture>
+							<source srcset="img/about.webp" type="image.webp" media="(min-width:991px)">
+							<source srcset="img/about-mob.webp" type="image.webp" media="(max-width:991px)">
+							<img src="img/about.webp" alt="Image">
+						</picture>
+					</div>
+					<div data-watch data-watch-once class="about__body myanim">
+						<div class="about__title">О компании</div>
+						<div class="about__text">
+							<p>Create The Amazing — музыкальное маркетинговое агентство, созданное помогать артистам по
+								всем вопросам, связанным с творчеством. Основано людьми с многолетним опытом работы в
+								музыкальной индустрии – <span>Игорем Демочкиным</span> и <span>Дмитрием
+									Карташовым.</span></p>
+							<p>Наша команда оказывает услуги по продвижению музыкального материала, SMM услуги,
+								продвижение видео, сотрудничество и коллаборации с популярными блогерами, дистрибуция,
+								дизайн услуги, песни под ключ, помощь с вокалом, создание аранжировок, юридические
+								услуги, запуск концертов, создание сайтов, ботов и конечно PR.</p>
+						</div>
+						<a href="#" class="about__button">ПОДРОБНЕЕ О КОМПАНИИ</a>
+					</div>
+				</div>
+			</div>
+			<section class="news">
+				<div class="news__container">
+					<h2 data-watch data-watch-once class="news__title title myanimtitle">Новости музыкальной индустрии
+					</h2>
+					<div class="news__text">Оставайся в курсе всех инсайтов мира музыки.</div>
+					<div class="news__items">
+						<a data-watch data-watch-once href="#" class="news__item myanimimg">
+							<div class="news__image">
+								<img src="img/news1.webp" alt="Image">
+							</div>
+							<div class="news__body">
+								<div class="news__name">Большая звезда на VK Fest? Яна Рудковская прокомментировала
+									приезд Канье Уэста в Москву</div>
+								<div class="news__content">По словам Яны, помимо визита мистера Уэста в Москву на день
+									рождения Гоши Рубчинского (креативного директора Yeezy), рэпер также...</div>
+							</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="news__item myanimimg">
+							<div class="news__image">
+								<img src="img/news2.webp" alt="Image">
+							</div>
+							<div class="news__body">
+								<div class="news__name">BENZO & A$AP ROCKY! Big Baby Tape выступит с Ракимом на Rolling
+									Loud в Тайланде</div>
+								<div class="news__content">Стало известно о хедлайнерах нового Rolling Loud в Тайланде,
+									которое будет проходить в Ноябре. Big Baby Tape выступит на одной сце...</div>
+							</div>
+						</a>
+						<a data-watch data-watch-once href="#" class="news__item myanimimg">
+							<div class="news__image">
+								<img src="img/news3.webp" alt="Image">
+							</div>
+							<div class="news__body">
+								<div class="news__name">ОФИЦИАЛЬНО: 6ix9ine приедет в Москву 19 октября, концерт будет
+									организован в МТС LIVE ХОЛЛ</div>
+								<div class="news__content">6ix9ine, известный своим ярким стилем, провокационными
+									текстами и неповторимой харизмой, собирается взорвать московскую...</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__body">
+				<div class="footer__container">
+					<div class="footer__left">
+						<a href="#" class="footer__logo">
+							<img src="img/logo-dark.webp" alt="Image">
+						</a>
+						<div class="footer__sta">CTA Media © 2024, Все права защищены.</div>
+					</div>
+					<div class="footer__center">
+						<div class="footer__item footer__item_t">
+							<a href="#" class="footer__political">Договор оферты</a>
+							<a href="#" class="footer__political">Пользовательское соглашение</a>
+							<a href="#" class="footer__political">Политика конфиденциальности</a>
+						</div>
+						<div class="footer__item footer__item_b">
+							<a href="#" class="footer__it footer__it_mail">info@mail.ru</a>
+							<a href="#" class="footer__it footer__it_number">+7 (777) 777 77-77</a>
+							<a href="#" class="footer__it footer__it_location">москва, москва</a>
+						</div>
+					</div>
+					<div class="footer__right">
+						<a aria-label="ссылка социального страницы" href="#" class="footer__social footer__social_vk">
+							<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_1488)">
+									<mask id="mask0_1_1488" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="15">
+										<path d="M15.0752 0H0.0751953V15H15.0752V0Z" fill="white" />
+									</mask>
+									<g mask="url(#mask0_1_1488)">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M1.12961 1.05442C0.0751953 2.10883 0.0751953 3.80589 0.0751953 7.2V7.8C0.0751953 11.1941 0.0751953 12.8912 1.12961 13.9456C2.18403 15 3.88109 15 7.2752 15H7.8752C11.2693 15 12.9664 15 14.0208 13.9456C15.0752 12.8912 15.0752 11.1941 15.0752 7.8V7.2C15.0752 3.80589 15.0752 2.10883 14.0208 1.05442C12.9664 0 11.2693 0 7.8752 0H7.2752C3.88109 0 2.18403 0 1.12961 1.05442ZM2.60648 4.56254C2.68772 8.46254 4.6377 10.8063 8.05646 10.8063H8.25024V8.57502C9.50649 8.70002 10.4564 9.61878 10.8377 10.8063H12.6127C12.1252 9.03128 10.8439 8.05002 10.0439 7.67502C10.8439 7.21253 11.9689 6.08753 12.2377 4.56254H10.6251C10.2751 5.80004 9.23774 6.92502 8.25024 7.03127V4.56254H6.63768V8.88752C5.63769 8.63753 4.37522 7.42503 4.31897 4.56254H2.60648Z" fill="#7A7A7A" />
+									</g>
+								</g>
+								<defs>
+									<clipPath id="clip0_1_1488">
+										<rect width="15.15" height="15" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a aria-label="ссылка социального страницы" href="#" class="footer__social footer__social_tg">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_1497)">
+									<mask id="path-1-inside-1_1_1497" fill="white">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4809 3.69182C17.3875 3.31009 18.3594 4.0767 18.1993 5.04728L16.3086 16.5112C16.1263 17.6165 14.9123 18.2508 13.8982 17.7C13.0496 17.239 11.7906 16.5296 10.6559 15.7882C10.0893 15.418 8.35442 14.2308 8.56767 13.3857C8.75 12.6631 11.6666 9.9482 13.3333 8.33362C13.9879 7.69939 13.6898 7.333 12.9166 7.91695C10.9986 9.36554 7.91927 11.568 6.90097 12.1878C6.00253 12.7346 5.53343 12.828 4.97388 12.7346C3.95211 12.5644 3.0048 12.3007 2.2314 11.9801C1.18609 11.5468 1.23701 10.1103 2.23069 9.69195L16.4809 3.69182Z" />
+									</mask>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M16.4809 3.69182C17.3875 3.31009 18.3594 4.0767 18.1993 5.04728L16.3086 16.5112C16.1263 17.6165 14.9123 18.2508 13.8982 17.7C13.0496 17.239 11.7906 16.5296 10.6559 15.7882C10.0893 15.418 8.35442 14.2308 8.56767 13.3857C8.75 12.6631 11.6666 9.9482 13.3333 8.33362C13.9879 7.69939 13.6898 7.333 12.9166 7.91695C10.9986 9.36554 7.91927 11.568 6.90097 12.1878C6.00253 12.7346 5.53343 12.828 4.97388 12.7346C3.95211 12.5644 3.0048 12.3007 2.2314 11.9801C1.18609 11.5468 1.23701 10.1103 2.23069 9.69195L16.4809 3.69182Z" fill="#7A7A7A" />
+									<path d="M16.4809 3.69182L29.4162 34.413L29.4163 34.4129L16.4809 3.69182ZM18.1993 5.04728L-14.6896 -0.377319L-14.6897 -0.377121L18.1993 5.04728ZM16.3086 16.5112L49.1974 21.9365L49.1976 21.9356L16.3086 16.5112ZM13.8982 17.7L29.8086 -11.5912L29.8081 -11.5914L13.8982 17.7ZM10.6559 15.7882L-7.57854 43.6919L-7.57744 43.6926L10.6559 15.7882ZM8.56767 13.3857L40.8879 21.5414L40.8879 21.5412L8.56767 13.3857ZM13.3333 8.33362L36.5264 32.275L36.5267 32.2747L13.3333 8.33362ZM12.9166 7.91695L33.006 34.5163L33.0062 34.5162L12.9166 7.91695ZM6.90097 12.1878L24.2315 40.6617L24.2325 40.6611L6.90097 12.1878ZM4.97388 12.7346L10.4582 -20.1444L10.4524 -20.1454L4.97388 12.7346ZM2.2314 11.9801L-10.5336 42.7724L-10.5325 42.7729L2.2314 11.9801ZM2.23069 9.69195L15.1644 40.4138L15.166 40.4131L2.23069 9.69195ZM29.4163 34.4129C6.1473 44.2106 -18.7986 24.5351 -14.6896 -0.377319L51.0883 10.4719C55.5175 -16.3817 28.6277 -37.5904 3.54552 -27.0293L29.4163 34.4129ZM-14.6897 -0.377121L-16.5804 11.0868L49.1976 21.9356L51.0883 10.4717L-14.6897 -0.377121ZM-16.5803 11.0859C-13.1712 -9.5804 9.9279 -22.39 29.8086 -11.5912L-2.01228 46.9911C19.8966 58.8916 45.4237 44.8135 49.1974 21.9365L-16.5803 11.0859ZM29.8081 -11.5914C29.6001 -11.7044 29.3707 -11.8323 29.1582 -11.9561C28.9273 -12.0906 28.8429 -12.1465 28.8893 -12.1162L-7.57744 43.6926C-5.33708 45.1565 -3.17207 46.3611 -2.01175 46.9913L29.8081 -11.5914ZM28.8904 -12.1155C28.9216 -12.0951 30.3842 -11.1802 32.1358 -9.53561C32.9284 -8.79144 35.1941 -6.60741 37.3096 -3.08075C39.1019 -0.0927072 43.9953 9.227 40.8879 21.5414L-23.7525 5.22996C-26.9666 17.9669 -21.9363 27.752 -19.8609 31.2118C-17.4625 35.2104 -14.7676 37.8728 -13.4971 39.0656C-10.7897 41.6077 -8.17631 43.3013 -7.57854 43.6919L28.8904 -12.1155ZM40.8879 21.5412C39.999 25.064 38.7231 27.634 38.0854 28.8372C37.3537 30.218 36.6697 31.2623 36.2501 31.8743C35.4282 33.0734 34.7391 33.8883 34.5215 34.1435C34.0456 34.7018 33.8007 34.9303 34.0931 34.6346C34.7246 33.9962 35.2287 33.5322 36.5264 32.275L-9.85992 -15.6077C-10.2288 -15.2503 -12.0164 -13.5496 -13.3055 -12.2463C-13.9733 -11.5711 -15.0857 -10.4275 -16.2119 -9.1065C-16.7545 -8.46993 -17.7144 -7.31172 -18.7373 -5.81958C-19.2573 -5.06096 -20.0243 -3.88265 -20.8196 -2.38199C-21.5209 -1.05883 -22.8409 1.61712 -23.7526 5.23016L40.8879 21.5412ZM36.5267 32.2747C38.3731 30.486 41.5937 27.0007 43.9963 21.7173C45.1414 19.1992 52.8166 1.12068 38.2786 -14.8049C24.2668 -30.1541 6.16357 -24.9822 3.83931 -24.2863C-1.46615 -22.6979 -5.21565 -20.1606 -7.17302 -18.6823L33.0062 34.5162C31.4354 35.7025 28.0131 38.0666 22.9605 39.5793C20.8892 40.1995 2.96456 45.3931 -10.9579 30.1418C-25.4066 14.3141 -17.7312 -3.59035 -16.6902 -5.87962C-14.3917 -10.9342 -11.3792 -14.1358 -9.86024 -15.6074L36.5267 32.2747ZM-7.1728 -18.6824C-7.83274 -18.184 -8.82228 -17.4595 -9.75745 -16.7939C-10.2165 -16.4672 -10.5846 -16.2102 -10.833 -16.0401C-10.9566 -15.9554 -11.0045 -15.9239 -10.989 -15.9341C-10.9789 -15.9408 -10.9314 -15.9721 -10.8531 -16.0222C-10.7804 -16.0687 -10.6333 -16.1621 -10.4306 -16.2855L24.2325 40.6611C26.8477 39.0692 31.1401 35.9256 33.006 34.5163L-7.1728 -18.6824ZM-10.4296 -16.2861C-9.69626 -16.7325 -6.9183 -18.4006 -2.79329 -19.5026C2.23499 -20.846 6.85946 -20.7447 10.4582 -20.1444L-0.510449 45.6137C3.64785 46.3073 8.78664 46.4085 14.414 44.9051C19.138 43.643 22.5997 41.6549 24.2315 40.6617L-10.4296 -16.2861ZM10.4524 -20.1454C11.4802 -19.9742 13.0403 -19.623 14.9953 -18.8126L-10.5325 42.7729C-7.03075 44.2244 -3.57598 45.1029 -0.504647 45.6147L10.4524 -20.1454ZM14.9964 -18.8122C43.016 -7.19665 39.7217 30.0753 15.1644 40.4138L-10.703 -21.0299C-37.2477 -9.85475 -40.6438 30.2902 -10.5336 42.7724L14.9964 -18.8122ZM15.166 40.4131L29.4162 34.413L3.54561 -27.0293L-10.7046 -21.0292L15.166 40.4131Z" fill="#5E5E5E" mask="url(#path-1-inside-1_1_1497)" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_1497">
+										<rect width="20" height="20" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a aria-label="ссылка социального страницы" href="#" class="footer__social footer__social_yt">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_1505)">
+									<mask id="path-1-inside-1_1_1505" fill="white">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M7.98844 12.5861V6.9743C9.98064 7.91173 11.5236 8.81731 13.3485 9.79364C11.8433 10.6283 9.98064 11.5649 7.98844 12.5861ZM19.091 4.18328C18.7474 3.73052 18.1617 3.37809 17.5381 3.26141C15.7053 2.91336 4.27099 2.91237 2.43915 3.26141C1.93911 3.35515 1.49384 3.58173 1.11133 3.93377C-0.500363 5.42967 0.00466618 13.4517 0.393147 14.7512C0.556507 15.3136 0.76769 15.7193 1.03365 15.9855C1.37631 16.3376 1.84547 16.58 2.38436 16.6887C3.89345 17.0008 11.668 17.1753 17.5062 16.7355C18.0441 16.6418 18.5202 16.3916 18.8958 16.0246C20.3859 14.5347 20.2843 6.06213 19.091 4.18328Z" />
+									</mask>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M7.98844 12.5861V6.9743C9.98064 7.91173 11.5236 8.81731 13.3485 9.79364C11.8433 10.6283 9.98064 11.5649 7.98844 12.5861ZM19.091 4.18328C18.7474 3.73052 18.1617 3.37809 17.5381 3.26141C15.7053 2.91336 4.27099 2.91237 2.43915 3.26141C1.93911 3.35515 1.49384 3.58173 1.11133 3.93377C-0.500363 5.42967 0.00466618 13.4517 0.393147 14.7512C0.556507 15.3136 0.76769 15.7193 1.03365 15.9855C1.37631 16.3376 1.84547 16.58 2.38436 16.6887C3.89345 17.0008 11.668 17.1753 17.5062 16.7355C18.0441 16.6418 18.5202 16.3916 18.8958 16.0246C20.3859 14.5347 20.2843 6.06213 19.091 4.18328Z" fill="#5E5E5E" />
+									<path d="M7.98844 12.5861H-32.0116V78.039L26.2348 48.182L7.98844 12.5861ZM7.98844 6.9743L25.0191 -29.219L-32.0116 -56.0547V6.9743H7.98844ZM13.3485 9.79364L32.7482 44.7744L96.9613 9.16282L32.2182 -25.4758L13.3485 9.79364ZM19.091 4.18328L52.8562 -17.2623L51.9614 -18.671L50.9525 -20.0003L19.091 4.18328ZM17.5381 3.26141L10.0755 42.5591L10.1283 42.5691L10.181 42.579L17.5381 3.26141ZM2.43915 3.26141L9.80931 42.5766L9.86772 42.5656L9.92611 42.5545L2.43915 3.26141ZM1.11133 3.93377L-25.9766 -25.4982L-26.0385 -25.4413L-26.1001 -25.3841L1.11133 3.93377ZM0.393147 14.7512L38.8058 3.59464L38.7621 3.44409L38.7172 3.29388L0.393147 14.7512ZM1.03365 15.9855L29.6969 -11.9147L29.5168 -12.0996L29.3344 -12.2823L1.03365 15.9855ZM2.38436 16.6887L10.4867 -22.4822L10.3901 -22.5021L10.2935 -22.5216L2.38436 16.6887ZM17.5062 16.7355L20.511 56.6225L22.454 56.4761L24.3736 56.1416L17.5062 16.7355ZM18.8958 16.0246L46.8532 44.6319L47.0164 44.4725L47.1777 44.3112L18.8958 16.0246ZM47.9884 12.5861V6.9743H-32.0116V12.5861H47.9884ZM-9.04227 43.1676C-8.95555 43.2084 -8.77502 43.2957 -8.26414 43.5713C-7.97153 43.7292 -7.68303 43.8876 -7.1945 44.1552C-6.75214 44.3975 -6.16479 44.7188 -5.52127 45.0631L32.2182 -25.4758C31.9504 -25.6191 28.2413 -27.7028 25.0191 -29.219L-9.04227 43.1676ZM-6.05127 -25.1871C-6.80639 -24.7683 -7.75525 -24.2927 -10.2579 -23.0098L26.2348 48.182C27.7165 47.4225 30.4931 46.025 32.7482 44.7744L-6.05127 -25.1871ZM50.9525 -20.0003C44.0652 -29.0743 34.3711 -34.2831 24.8952 -36.0562L10.181 42.579C1.95219 41.0392 -6.57045 36.5353 -12.7705 28.3669L50.9525 -20.0003ZM25.0006 -36.0363C20.8546 -36.8236 16.401 -36.8993 15.946 -36.9139C14.0484 -36.9748 11.9458 -36.9999 9.98974 -37C8.03393 -37.0001 5.93037 -36.9751 4.03143 -36.9142C3.58223 -36.8998 -0.886649 -36.8245 -5.0478 -36.0317L9.92611 42.5545C9.70654 42.5963 9.50377 42.6329 9.32013 42.6648C9.13625 42.6967 8.96591 42.7248 8.8108 42.7494C8.5034 42.7983 8.23427 42.837 8.01214 42.8671C7.78863 42.8974 7.59236 42.9218 7.42847 42.941C7.26381 42.9604 7.11935 42.9761 6.99829 42.9886C6.87677 43.0011 6.77076 43.0113 6.6823 43.0194C6.59358 43.0275 6.51708 43.0341 6.45421 43.0392C6.33079 43.0493 6.24179 43.0555 6.1936 43.0587C6.14409 43.062 6.11917 43.0634 6.12201 43.0632C6.1242 43.0631 6.14489 43.062 6.18568 43.0601C6.27016 43.0562 6.40554 43.0508 6.59542 43.0447C6.78318 43.0386 7.00517 43.0326 7.25999 43.027C7.51394 43.0215 7.79086 43.0166 8.08732 43.0125C8.68303 43.0043 9.32824 43 9.98675 43C10.6453 43 11.2907 43.0044 11.8867 43.0126C12.1833 43.0167 12.4605 43.0217 12.7147 43.0272C12.9699 43.0328 13.1922 43.0389 13.3805 43.0449C13.5708 43.051 13.7068 43.0565 13.7921 43.0604C13.8332 43.0623 13.8544 43.0634 13.8571 43.0636C13.8604 43.0638 13.8361 43.0625 13.7873 43.0592C13.7397 43.0561 13.6516 43.0499 13.5291 43.0399C13.4667 43.0348 13.3907 43.0283 13.3026 43.0203C13.2147 43.0123 13.1093 43.0022 12.9885 42.9897C12.8682 42.9773 12.7245 42.9618 12.5607 42.9426C12.3977 42.9235 12.2025 42.8993 11.9801 42.8692C11.7591 42.8394 11.4913 42.801 11.1854 42.7525C11.0311 42.728 10.8616 42.7002 10.6786 42.6685C10.4959 42.6369 10.2941 42.6006 10.0755 42.5591L25.0006 -36.0363ZM-4.931 -36.0537C-13.0486 -34.532 -20.2667 -30.7533 -25.9766 -25.4982L28.1993 33.3658C23.2544 37.9168 16.9268 41.2423 9.80931 42.5766L-4.931 -36.0537ZM-26.1001 -25.3841C-32.6935 -19.2644 -35.5998 -12.5438 -36.757 -9.5194C-38.1141 -5.97235 -38.7786 -2.85436 -39.1281 -0.871503C-39.8304 3.11271 -39.9697 6.70041 -39.9953 8.96359C-40.0234 11.4522 -39.9236 13.8442 -39.7573 15.9187C-39.7089 16.5226 -39.4031 21.2839 -37.9309 26.2084L38.7172 3.29388C39.2511 5.07972 39.5241 6.47627 39.6247 7.00911C39.7535 7.69081 39.8305 8.21409 39.8708 8.50591C39.9513 9.08912 39.9804 9.44548 39.987 9.5275C39.9996 9.68559 40.0011 9.73503 39.9996 9.86868C39.9986 9.96057 39.9939 10.2279 39.9623 10.651C39.9336 11.0346 39.8597 11.8676 39.6572 13.0162C39.4809 14.0163 39.0384 16.252 37.9606 19.0689C37.0827 21.3632 34.5133 27.5059 28.3228 33.2516L-26.1001 -25.3841ZM-38.0195 25.9077C-36.9091 29.7309 -34.1919 37.3204 -27.2671 44.2533L29.3344 -12.2823C35.7273 -5.88191 38.0221 0.896365 38.8058 3.59464L-38.0195 25.9077ZM-27.6296 43.8857C-20.92 50.7787 -12.8452 54.4223 -5.52475 55.8989L10.2935 -22.5216C16.5361 -21.2624 23.6727 -18.1036 29.6969 -11.9147L-27.6296 43.8857ZM-5.71796 55.8595C-1.90064 56.6491 1.84074 56.8022 2.49695 56.8361C4.21872 56.9252 6.09169 56.9744 7.93511 56.9922C11.5269 57.0269 16.1234 56.953 20.511 56.6225L14.5014 -23.1515C13.8541 -23.1027 12.9528 -23.0572 11.8607 -23.029C10.7892 -23.0014 9.69686 -22.9945 8.70865 -23.0041C7.69002 -23.0139 6.9715 -23.0394 6.62865 -23.0571C6.44649 -23.0665 6.55654 -23.0643 6.88098 -23.0345C7.04773 -23.0192 7.40047 -22.9849 7.88245 -22.9224C8.2856 -22.8702 9.24131 -22.7398 10.4867 -22.4822L-5.71796 55.8595ZM24.3736 56.1416C33.0067 54.6371 40.799 50.5486 46.8532 44.6319L-9.06171 -12.5828C-3.75858 -17.7654 3.08152 -21.3535 10.6388 -22.6706L24.3736 56.1416ZM47.1777 44.3112C53.4092 38.0807 56.0314 31.4219 56.9702 28.8415C58.1669 25.5525 58.7826 22.6495 59.1202 20.7267C59.8048 16.827 59.9865 13.197 59.9993 10.4342C60.0124 7.58541 59.8503 4.32196 59.374 0.977327C59.2014 -0.234805 58.1935 -8.85895 52.8562 -17.2623L-14.6742 25.6289C-17.6212 20.9889 -18.7593 16.9485 -19.0791 15.7866C-19.5429 14.1017 -19.744 12.8388 -19.827 12.2559C-19.9952 11.0748 -20.0013 10.3749 -19.9999 10.0654C-19.9988 9.84182 -19.9966 8.7267 -19.6747 6.89339C-19.5185 6.00371 -19.13 4.02184 -18.2084 1.48867C-17.5445 -0.335838 -15.2452 -6.40401 -9.38614 -12.2621L47.1777 44.3112Z" fill="#7A7A7A" mask="url(#path-1-inside-1_1_1505)" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_1505">
+										<rect width="20" height="20" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20241130151657"></script>
+</body>
+
+</html>
